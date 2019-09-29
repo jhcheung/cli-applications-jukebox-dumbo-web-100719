@@ -51,10 +51,11 @@ def run(playlist)
     help
   when exit
     exit_jukebox
-    
+    return
   when list
     list(playlist)
   when play
     play(playlist)
   end
+  run(playlist)
 end 
