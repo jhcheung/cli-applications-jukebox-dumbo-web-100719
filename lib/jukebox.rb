@@ -49,7 +49,7 @@ def run(playlist)
   case user_response
   when help
     help
-  when exit
+  when 'exit'
     exit_jukebox
   when list
     list(playlist)
