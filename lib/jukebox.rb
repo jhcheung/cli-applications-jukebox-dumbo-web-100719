@@ -47,13 +47,13 @@ def run(playlist)
   puts "Please enter a command:"
   user_response = gets.strip
   case user_response
-  when help
+  when "help"
     help
   when "exit"
     exit_jukebox
-  when list
+  when "list"
     list(playlist)
-  when play
+  when "play"
     play(playlist)
   end
   while user_response != exit do
