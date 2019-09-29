@@ -24,9 +24,11 @@ end
 def play(playlist)
   puts "Please enter a song name or number:"
   user_response = gets.strip
-  if user_response.to_i <= playlist.length || playlist.any?(user_response)
+  if user_response.to_i <= playlist.length 
     puts playlist[user_response.to_i - 1]
-  else
+  elsif playlist.any?(user_response)
+    puts user_response
+  else 
     puts "Invalid input, please try again"
   end
 end 
