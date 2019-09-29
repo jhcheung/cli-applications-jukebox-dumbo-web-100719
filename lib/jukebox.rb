@@ -51,7 +51,6 @@ def run(playlist)
     help
   when exit
     exit_jukebox
-    break
   when list
     list(playlist)
   when play
