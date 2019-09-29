@@ -57,6 +57,6 @@ def run(playlist)
     play(playlist)
   end
   while user_response != exit 
-    
+    run(playlist)
   end 
 end 
